@@ -225,9 +225,9 @@ static const Key keys[] = {
 
 	// Border and Gaps -----------
 	/* Borders */
-  { MODKEY|ShiftMask,       XK_equal,         setborderpx, {.i = +1 } }, // Increase border width
-  { MODKEY|ShiftMask,       XK_minus,         setborderpx, {.i = -1 } }, // Decrease border width
-  { MODKEY|ShiftMask,       XK_BackSpace,     setborderpx, {.i = default_border } },
+  // { MODKEY|ShiftMask,       XK_equal,         setborderpx, {.i = +1 } }, // Increase border width
+  // { MODKEY|ShiftMask,       XK_minus,         setborderpx, {.i = -1 } }, // Decrease border width
+  // { MODKEY|ShiftMask,       XK_BackSpace,     setborderpx, {.i = default_border } },
 
 	/* Gaps */
   // overall gaps
@@ -274,18 +274,18 @@ static const Key keys[] = {
   { MODKEY, 					XK_b, 						togglebar, {0} }, // Toggle bar
   { MODKEY, 					XK_Tab, 					zoom, {0} }, // Switch to master
   { ALTKEY, 					XK_Tab, 					view, {0} }, // Switch to last tag
-  { MODKEY, 					XK_d, 						hidewin, {0} }, // Hide window
-  { MODKEY|ShiftMask, 		XK_d, 						restorewin, {0} }, // Restore window
+  // { MODKEY, 					XK_d, 						hidewin, {0} }, // Hide window
+  // { MODKEY|ShiftMask, 		XK_d, 						restorewin, {0} }, // Restore window
   { MODKEY, 					XK_0, 						view, {.ui = ~0 } },
   { MODKEY|ShiftMask, 		XK_0, 						tag, {.ui = ~0 } },
 
 	// Layouts -----------
 	{ ALTKEY|ControlMask, 		XK_space, 					spawn, {.v = rofi_layoutcmd } },
 
-	{ MODKEY|ControlMask, 		XK_comma, 					cyclelayout, {.i = -1 } },
-	{ MODKEY|ControlMask, 		XK_period, 					cyclelayout, {.i = +1 } },
+	// { MODKEY|ControlMask, 		XK_comma, 					cyclelayout, {.i = -1 } },
+	// { MODKEY|ControlMask, 		XK_period, 					cyclelayout, {.i = +1 } },
 	{ MODKEY|ShiftMask, 		XK_space, 					togglefloating, {0} },
-	{ MODKEY, 					XK_f, 						togglefullscr, {0} },
+	// { MODKEY, 					XK_f, 						togglefullscr, {0} },
 
 	{ MODKEY, 					XK_space, 					setlayout, {0} }, 
 	{ MODKEY, 					XK_t, 						setlayout, {.v = &layouts[0]} }, // Tile
